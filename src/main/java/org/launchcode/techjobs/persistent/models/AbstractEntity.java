@@ -9,6 +9,7 @@ import jakarta.validation.constraints.Size;
 
 import java.util.Objects;
 
+
 public abstract class AbstractEntity {
 
     private int id;
