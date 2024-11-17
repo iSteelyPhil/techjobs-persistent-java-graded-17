@@ -56,6 +56,13 @@ public class HomeController {
                                        Errors errors, Model model, @RequestParam int employerId,
                                     @RequestParam(required = false) List<Integer> skills) {
 
+      /*  if (skills == null || skills.isEmpty()) {
+            model.addAttribute("title", "Add Job");
+            model.addAttribute("employers", employerRepository.findAll());
+            model.addAttribute("skills", skillRepository.findAll());
+            return "add";
+        }*/
+
         if (errors.hasErrors()) {
 	    model.addAttribute("title", "Add Job");
             model.addAttribute("employers", employerRepository.findAll());

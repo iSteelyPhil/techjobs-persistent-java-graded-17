@@ -13,7 +13,7 @@ import java.util.List;
 public class Skill extends AbstractEntity {
 
     @NotBlank(message = "Skill must be entered and not left empty.")
-    @Size(max = 1111, message = "Employer cannot exceed 1111 characters.")
+    @Size(max = 1111, message = "Skill cannot exceed 1111 characters.")
     private String description;
 
     @ManyToMany(mappedBy="skills")
