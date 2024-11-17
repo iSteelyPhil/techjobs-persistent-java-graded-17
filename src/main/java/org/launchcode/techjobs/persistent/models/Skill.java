@@ -1,9 +1,9 @@
 package org.launchcode.techjobs.persistent.models;
 
-import jakarta.persistence.Column;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 public class Skill extends AbstractEntity {
 
-    @NotNull(message = "Skill must be entered and not left empty.")
+    @NotBlank(message = "Skill must be entered and not left empty.")
     @Size(max = 1111, message = "Employer cannot exceed 1111 characters.")
     private String description;
 
